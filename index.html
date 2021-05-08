@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Crime Fighter Documentation</title>
+
+        <style>
+            *{
+                background-color:rgb(200, 171, 219)            }
+
+            a{
+                font-size:larger;
+                color:blue;
+            }
+
+            h1{
+                color:rgb(55, 167, 55)
+            }
+
+            h2{
+                color:rgb(243, 64, 64)
+            }
+
+            p{
+                font-size:larger;
+            }
+        </style>
+    </head>
+     
+    <body>
+        <h1>Crime Fighter Project Documentation</h1>
+        <a target="_blank" href="https://0swayam0.github.io/Crime-Fighter/">Click here to play</a>
+        <hr color=black>
+
+        <h2>Index:</h2>
+        <p>
+            1.Description and Intructions to play. <br>
+            2.Libraries and Tools used. <br>
+            3.Explaining the Code. 
+        </p>
+
+        <hr color=black>
+
+        <h2>Description:</h2>
+        <p>
+            There are terrorists trying to bomb the city, you are the only soldier <br> 
+            in city so it is your job to stop them. Defeat all terrorists before they kill you. <br>
+            Be alert, terrorists spawn anywhwere and they shoot you. <br>
+            You have only 3 lives, everytime they shoot you, your life decreases. <br>
+            You have a limited ammo of 12 bullets. <br>
+            The game will be over if you exhaust your ammo or use all lives. <br> 
+            The only way to win is by defeating all terrorists.
+         </p>
+
+         <h2>Instructions:</h2>
+         <p>
+             Press 'S' to start the game. <br>
+             After the game finishes press 'R' to restart.<br>
+             Use the up, down, right and left arrow keys to move in that particular direction. <br>
+             Press the spacebar to shoot one bullet at a time. <br>
+        </p>
+
+        <hr color=black>
+
+        <h2>Libraries used:</h2>
+        <p>
+            p5.js and p5.play.js <br>
+            <br>
+            Libraries are files where developers collect pre-written code and <br>
+            functions which can later be used by a programmer.
+        </p>
+
+        <h2>Tools used:</h2>
+        <p>
+            All objects in the game are made using sprites. <br>
+            Sprites are used where you need to add images or animations to objects. <br>
+            They don't obey the laws of physics.
+        </p>
+
+        <hr color=black>
+
+        <h2>Explaining the code:</h2>
+
+        <a></a><img src="key83.png"/></a>
+        <p>
+            83 is the value given to 'S', so when 'S' key is pressed, the game will go to gameState 1 which is the play state,
+            and a sound is played. <br>
+            In play state a background image is added and enemyShoot and spawnEnemy functions are called. <br>
+            The if conditions contain movements for the Soldier. <br>
+            spawnEnemy creates a terrorist sprite, spawns them randomly and adds images randomly.
+        </p>
+
+        <a></a><img src="enemy.png"/></a>
+        <p>
+            Here bullets for the terrorist are created. <br>
+            enemyShoot is the function which makes the terrorist automatically shoot us. <br>
+            Because there are multiple bullets, they are added in to group.
+        </p>
+
+        <a></a><img src="player.png"/></a>
+        <p>
+            Here bullets for the Soldier are created. <br>
+        </p>
+
+        <a></a><img src="keypress.png"/></a>
+        <p>
+            32 is the value for the spacebar. <br>
+            spawnBullets is called when spacebar is pressed, ammo is decremented and a sound is played. <br>
+            Bullets are only shot when game is in play state (gameState=1).
+        </p>
+
+        <a></a><img src="end.png"/></a>
+        <p>
+            The game only ends when any one of these conditions is true. <br>
+            The conditons are:  <br>
+            life=0 (meaning all lives are used) <br>
+            ammo=0 (meaning all bullets are used) <br>
+            kills=10 (meaning all terrorists have been defeated)
+        </p>
+
+        <hr color=black>
+
+        <h1 align=center>Thank you</h1>
+    </body>
+</html>
